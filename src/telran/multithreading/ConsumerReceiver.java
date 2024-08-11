@@ -31,7 +31,7 @@ public class ConsumerReceiver extends Thread {
 	}
 
 	private void processMessage(String message) {
-		System.out.printf("Thread %s %s\n", getName(), message);
+		System.out.printf("Thread %s id=%d %s\n", getName(),getId(), message);
 		messageCounter.getAndIncrement();
 	}
 }

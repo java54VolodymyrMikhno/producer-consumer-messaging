@@ -37,7 +37,7 @@ public class SenderReceiverAppl {
 
 		ConsumerReceiver[] receivers = IntStream.range(0, nReceivers).mapToObj(i -> {
 			ConsumerReceiver reseiver = new ConsumerReceiver();
-			if (i % 2 == 0) {
+			if (reseiver.getId()%2!=0) {
 				reseiver.setMessagebox(oddMessageBox);
 			} else {
 				reseiver.setMessagebox(evenMessageBox);
